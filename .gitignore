@@ -3,6 +3,9 @@
 # data folder
 data/
 
+# .SVG file
+*.svg
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -36,7 +36,7 @@ uniq_u_chip.compute()
 
 ddf1["Errors?"].unique().compute()
 
-# Incase of csv data have error rows, should 
+# In case of csv data have error rows, should 
 # Specify column name & dtypes manually
 # dtype 'category' also reduce amount of memory used
 ddf_col = [
@@ -88,8 +88,6 @@ uniq_u_chip.compute()
 ddf1.memory_usage(deep=True).compute()
 
 # Enforce dtype for reading CSV
-
-
 pyarrow_schema = pa.schema([
     pa.field('User', pa.int64()),
     pa.field('Card', pa.int64()),
